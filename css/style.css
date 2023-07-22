@@ -1,0 +1,209 @@
+/* GLOBAL STYLING */
+:root {
+    --darkGrey: #131212;
+    --offWhite: #FDFCFC;
+    --lightPink: #FFD5D0;
+    --darkGreen: #0F1D01;
+    --lightGreen: #32724D;
+    --transparentOffWhite: #FDFCFC00;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: var(--offWhite);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 128px;
+    text-transform: capitalize;
+    line-height: 1em;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 96px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    color: var(--darkGreen);
+}
+
+/* NAVBAR STYLING */
+nav {
+    background: linear-gradient(180deg, var(--offWhite), 90%, var(--transparentOffWhite));
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 80px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navSocials li {
+    display: flex;
+    column-gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#githubIcon, #linkedinIcon {
+    font-size: 40px;
+    color: var(--darkGrey);
+}
+
+/* HERO STYLING */
+
+.heroSection {
+    height: calc(100vh - 240px);
+    padding-top: 100px;
+    width: 100vw;
+    display: flex;
+    column-gap: 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroSection span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 40px;
+    max-width: 800px;
+}
+
+.dividerLine {
+    height: 2px;
+    width: 100%;
+    background-color: var(--darkGrey);
+}
+
+.heroSection img {
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
+}
+
+.downIconContainer {
+    width: 100%;
+    /* position: fixed; */
+    /* bottom: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#downIcon {
+    font-size: 40px;
+}
+
+/* CONTENT SECTION STYLING */
+.contentSection {
+    margin: 210px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.caseStudySection {
+    display: flex;
+    column-gap: 80px;
+}
+
+.caseStudySection img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.devWorkSection {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    padding-top: 80px;
+}
+
+#githubIconBody {
+    font-size: 600px;
+    color: var(--darkGrey);
+}
+
+/* FOOTER STYLING */
+footer {
+    background-color: var(--darkGreen);
+    color: var(--offWhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+    padding: 100px;
+}
+
+footer span h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footerSocials {
+    display: flex;
+    column-gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#linkedinIconFooter, #emailLogoFooter {
+    font-size: 40px;
+    color: var(--offWhite);
+}
