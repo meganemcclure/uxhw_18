@@ -90,6 +90,15 @@ nav ul li h4:hover {
     cursor: pointer;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: var(--darkGrey);
+}
+
+.currentPage {
+    text-decoration: underline;
+}
+
 .navSocials li {
     display: flex;
     column-gap: 20px;
