@@ -77,6 +77,10 @@ nav {
     width: 100%;
 }
 
+#hamburgerMenuIcon {
+    display:none;
+}
+
 nav ul {
     padding: 0;
     margin: 80px;
@@ -114,12 +118,12 @@ nav ul li a {
 /* HERO STYLING */
 
 .heroSection {
-    height: calc(100vh);
-    width: 100vw;
+    height: calc(100vh - 160px);
     display: flex;
     column-gap: 180px;
     justify-content: center;
     align-items: center;
+    padding: 80px;
 }
 
 .heroSection span {
@@ -172,6 +176,42 @@ nav ul li a {
     }
 }
 
+/* tablet */
+@media only screen and (max-width: 1280px) {
+    #hamburgerMenuIcon {
+        display: inline-block;
+        font-size: 40px;
+        color: var(--darkGrey);
+        margin: 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .heroSection {
+        height: calc(100vh - 80px);
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px;
+    }
+    .heroSection img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 414px) {
+    .heroSection {
+        padding: 40px 20px;
+    }
+    .heroSection img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
 /* FOOTER STYLING */
 footer {
     background-color: var(--darkGreen);
@@ -182,6 +222,7 @@ footer {
     justify-content: center;
     row-gap: 40px;
     padding: 100px;
+    text-align: center;
 }
 
 footer span h4:hover {

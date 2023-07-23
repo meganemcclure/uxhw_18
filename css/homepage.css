@@ -8,18 +8,17 @@
 
 .caseStudySection {
     display: flex;
-    column-gap: 80px;
+    gap: 80px;
 }
 
 .caseStudySection img {
-    width: 40%;
+    width: 50%;
     object-fit: cover;
 }
 
 .devWorkSection {
     display: flex;
     align-items: center;
-    justify-content: center;
     column-gap: 80px;
     padding-top: 80px;
 }
@@ -27,4 +26,31 @@
 #githubIconBody {
     font-size: 400px;
     color: var(--darkGrey);
+}
+
+/* tablet */
+@media only screen and (max-width: 1280px) {
+    .contentSection {
+        margin: 40px;
+    }
+
+    .caseStudySection {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .caseStudySection img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .devWorkSection {
+        flex-direction: column;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 414px) {
+    .caseStudySection {
+        flex-direction: column;
+    }
 }
