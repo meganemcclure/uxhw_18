@@ -1,0 +1,30 @@
+/* CONTENT SECTION STYLING */
+.contentSection {
+    margin: 210px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.caseStudySection {
+    display: flex;
+    column-gap: 80px;
+}
+
+.caseStudySection img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.devWorkSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+    padding-top: 80px;
+}
+
+#githubIconBody {
+    font-size: 400px;
+    color: var(--darkGrey);
+}
