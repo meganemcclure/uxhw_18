@@ -241,3 +241,21 @@ footer span h4:hover {
     font-size: 40px;
     color: var(--offWhite);
 }
+
+.mobile {
+    display: none;
+}
+
+/* tablet */
+@media only screen and (max-width: 1280px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        column-gap: 20px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
