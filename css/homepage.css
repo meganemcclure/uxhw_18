@@ -46,11 +46,19 @@
     .devWorkSection {
         flex-direction: column;
     }
+
+    #githubIconBody {
+        font-size: 300px;
+    }
 }
 
 /* mobile */
 @media only screen and (max-width: 414px) {
     .caseStudySection {
         flex-direction: column;
+    }
+
+    #githubIconBody {
+        font-size: 150px;
     }
 }
