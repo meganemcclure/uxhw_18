@@ -212,6 +212,18 @@ nav ul {
     }
 }
 
+/* small desktop */
+@media only screen and (max-width: 1600px) {
+    .heroSection {
+        gap: 80px;
+    }
+
+    .heroSection img {
+        height: 400px;
+        width: 400px;
+    }
+}
+
 /* tablet */
 @media only screen and (max-width: 1280px) {
     #hamburgerMenuIcon {
