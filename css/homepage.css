@@ -16,13 +16,6 @@
     object-fit: cover;
 }
 
-.devWorkSection {
-    display: flex;
-    align-items: center;
-    column-gap: 80px;
-    padding-top: 80px;
-}
-
 #githubIconBody {
     font-size: 400px;
     color: var(--darkGrey);

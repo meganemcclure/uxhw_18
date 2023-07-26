@@ -23,14 +23,6 @@
     object-fit: cover;
 }
 
-.devDetails {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 80px;
-    padding-top: 80px;
-}
-
 #githubIconBody {
     font-size: 600px;
     color: var(--darkGrey);

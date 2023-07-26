@@ -89,17 +89,22 @@ nav ul {
     gap: 40px;
 }
 
-nav ul li h4:hover {
+.pageLink:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-nav ul li a {
+.pageLink {
     text-decoration: none;
     color: var(--darkGrey);
 }
 
-.currentPage {
+.caseStudyLink {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+#currentPage {
     text-decoration: underline;
 }
 
@@ -177,6 +182,17 @@ nav ul li a {
 
 .workInProgress {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.devDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 80px;
+    padding-top: 80px;
 }
 
 @keyframes bounceAnimation {
