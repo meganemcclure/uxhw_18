@@ -222,6 +222,18 @@ nav ul {
         height: 400px;
         width: 400px;
     }
+
+    .desktopTitle {
+        display: none;
+    }
+
+    .tabletTitle {
+        display: inline-block;
+    }
+
+    .mobileTitle {
+        display: none;
+    }
 }
 
 /* tablet */
@@ -306,11 +318,15 @@ footer span h4:hover {
     cursor: pointer;
 }
 
-.footerSocials {
+/* .footerSocials {
     display: flex;
     column-gap: 20px;
     align-items: flex-start;
     justify-content: center;
+} */
+
+.footerLink {
+    color: var(--offWhite);
 }
 
 #linkedinIconFooter, #emailLogoFooter {
