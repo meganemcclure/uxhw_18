@@ -16,9 +16,11 @@
     object-fit: cover;
 }
 
-#githubIconBody {
-    font-size: 400px;
-    color: var(--darkGrey);
+/* small desktop */
+@media only screen and (max-width: 1600px) {
+    .contentSection {
+        margin: 80px;
+    }
 }
 
 /* tablet */
@@ -35,23 +37,11 @@
         width: 100%;
         object-fit: cover;
     }
-
-    .devWorkSection {
-        flex-direction: column;
-    }
-
-    #githubIconBody {
-        font-size: 300px;
-    }
 }
 
 /* mobile */
 @media only screen and (max-width: 414px) {
     .caseStudySection {
         flex-direction: column;
-    }
-
-    #githubIconBody {
-        font-size: 150px;
     }
 }

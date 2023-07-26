@@ -1,5 +1,5 @@
 /* CONTENT SECTION STYLING */
-.designWorkSection, .devWorkSection {
+.designWorkSection {
     margin: 300px 210px;
     display: flex;
     flex-direction: column;
@@ -23,13 +23,33 @@
     object-fit: cover;
 }
 
-#githubIconBody {
-    font-size: 600px;
-    color: var(--darkGrey);
+.contentSection {
+    margin: 210px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+/* small desktop */
+@media only screen and (max-width: 1600px) {
+    .designWorkSection {
+        margin: 300px 80px;
+    }
+    .caseStudiesSection {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+    .contentSection {
+        margin: 80px;
+    }
 }
 
 /* tablet */
 @media only screen and (max-width: 1280px) {
+    .contentSection {
+        margin: 40px;
+    }
+
     .designWorkSection {
         margin: 100px 40px 40px 40px;
     }
@@ -38,19 +58,6 @@
         grid-template-columns: 1fr 1fr;
         gap: 40px;
     }
-
-    .devWorkSection {
-        margin: 40px;
-        gap: 40px;
-    }
-
-    .devDetails{
-        flex-direction: column;
-    }
-
-    #githubIconBody {
-        font-size: 300px;
-    }
 }
 
 /* mobile */
@@ -58,10 +65,8 @@
     .caseStudiesSection {
         grid-template-columns: 1fr;
     }
-    .devWorkSection h2 {
-        display: none;
-    }
-    #githubIconBody {
-        font-size: 150px;
+
+    .caseStudySection {
+        flex-direction: column;
     }
 }

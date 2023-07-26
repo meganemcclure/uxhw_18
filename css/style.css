@@ -195,6 +195,11 @@ nav ul {
     padding-top: 80px;
 }
 
+#githubIconBody {
+    font-size: 400px;
+    color: var(--darkGrey);
+}
+
 @keyframes bounceAnimation {
     from {
         margin-top: 7px;
@@ -273,6 +278,14 @@ nav ul {
     .mobileTitle {
         display: none;
     }
+
+    #githubIconBody {
+        font-size: 300px;
+    }
+
+    .devDetails {
+        flex-direction: column;
+    }
 }
 
 /* mobile */
@@ -298,6 +311,10 @@ nav ul {
     .mobileTitle {
         display: inline-block;
     }
+
+    #githubIconBody {
+        font-size: 150px;
+    }
 }
 
 /* FOOTER STYLING */
@@ -318,13 +335,6 @@ footer span h4:hover {
     cursor: pointer;
 }
 
-/* .footerSocials {
-    display: flex;
-    column-gap: 20px;
-    align-items: flex-start;
-    justify-content: center;
-} */
-
 .footerLink {
     color: var(--offWhite);
 }
@@ -340,6 +350,10 @@ footer span h4:hover {
 
 /* tablet */
 @media only screen and (max-width: 1280px) {
+    footer {
+        padding: 40px;
+    }
+
     .desktop {
         display: none;
     }
